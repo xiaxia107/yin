@@ -1,0 +1,148 @@
+html{
+	width:  100%;
+	height: 100%;
+	margin: 0 auto; 
+	padding: 0;}
+
+body{
+	width: 94%;
+	height: 100%;
+	margin:auto;
+}
+
+#all{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-wrap:wrap;
+}
+
+#head{
+	width: 900px;
+	height: 58px;
+	margin: 0 auto;}
+
+#head div{
+	height: 58px; 
+	float: left;}
+
+#e{
+	margin-left: 345px}
+
+#w{
+	margin-top: 0px;}
+
+a{
+	display: inline-block; 
+	text-decoration: none;
+	color: #000;}
+
+h1,h2{
+	border-bottom: 4px solid rgb(49,194,124)}
+
+h3{
+	padding: 0 40px;
+    margin-top: 30px}
+
+#aimg{
+	width: 45px;
+	height: 45px; 
+	margin-top: 15px;
+	padding: 0 20px;}
+
+input {
+    width: 160px;
+    height: 36px;
+    margin-top: 20px;
+    padding: 0 40px;
+    color: #ccc;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+}
+
+#daohang img{
+	width: 50px;height: 50px;}
+#daohang{margin: 0 auto;}
+
+#dh{
+	margin: 0 auto; 
+	width: 900px;
+	height: 50px;
+/*	border:1px solid;*/
+	text-align: center;
+    }
+
+#music{ 
+	width: 900px;
+	height: 420px; 
+	margin:0 auto;
+	/*background-image: linear-gradient(#eee, #fff);*/
+}
+
+#music img{
+	width: 250px;
+	height: 250px;
+	border-radius: 25px}
+
+#zj{width: 900px;
+	height: 250px;}
+
+#zj td{
+	text-align: center;}
+
+#al{
+	width: 900px;}
+
+#tj{float: left;}
+#gd{float: right;}
+
+#di{margin:30px auto;
+}
+#mo{width: 900px;
+	margin: 0 auto;
+	/*background-image: linear-gradient(#eee, #fff);*/
+}
+#mo img{width: 50px;height: 50px;}
+#mo td{text-align: center;}
+
+a:hover {
+    color:#31C27C;
+}
+
+
+.lunbo {
+            width: 900px;
+            height: 400px;
+            margin: 30px auto;
+            overflow: hidden;
+            position: relative;
+            border:0px groove rgb(94,94,94);
+            border-radius: 15px;
+        }
+        
+        .box {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 400px;
+            width: 4500px;
+            animation: bo 15s steps(5) infinite;
+        }
+        .box:hover{
+            animation-play-state: paused;
+        }
+        
+        .lunbo .box img {
+            height: 400px;
+            display: block;
+            float: left;
+        }
+        
+        @keyframes bo {
+            0% {
+                margin-left: 0;
+            }
+            100% {
+                margin-left: -4500px;
+            }
+        }

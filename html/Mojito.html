@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/icon.css">
+    <title>Mojito</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            background-color: rgb(246, 246, 246);
+        }
+        
+        li {
+            list-style: none;
+        }
+        
+        .w {
+            width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .header {
+            background-color: #fff;
+        }
+        
+        .header-left {
+            height: 89px;
+            border-bottom: 1px solid #ccc;
+        }
+        
+        .logo {
+            float: left;
+            margin-right: 25px;
+        }
+        
+        .logo img {
+            margin: 9px 0;
+        }
+        
+        .mynav {
+            float: left;
+        }
+        
+        .mynav li {
+            float: left;
+        }
+        
+        .mynav ul li a {
+            display: block;
+            line-height: 90px;
+            padding: 0 17px;
+            color: #000;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        
+        .mynav li .guan {
+            background-color: rgb(1, 204, 240);
+            padding: 0 20px;
+            color: #fff;
+        }
+        
+        .mynav ul li a:hover {
+            color: rgb(1, 204, 240);
+        }
+        
+        .mynav li .guan:hover {
+            color: #fff;
+        }
+        
+        .search {
+            position: relative;
+            float: left;
+            margin: 26px 5px 26px 30px;
+        }
+        
+        .search input {
+            width: 220px;
+            height: 36px;
+            padding-left: 10px;
+            color: #ccc;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        
+        .search span {
+            position: absolute;
+            top: 9px;
+            right: 12px;
+            font-size: 21px;
+            color: #ccc;
+        }
+        
+        .login {
+            float: left;
+            margin-left: 17px;
+        }
+        
+        .login a {
+            display: inline-block;
+            height: 25px;
+            line-height: 25px;
+            margin: 27px 3px;
+            /* padding: 0 13px; */
+            color: #000;
+            text-decoration: none;
+        }
+        
+        .login .lvzhuan,
+        .login .pay-pac {
+            margin-left: 17px;
+            font-size: 13px;
+            padding: 5px 8px;
+            border-radius: 3px;
+        }
+        
+        .login .lvzhuan {
+            background-color: rgb(1, 204, 240);
+            color: #fff;
+        }
+        
+        .login .pay-pac {
+            border: 1px solid #ccc;
+            margin-left: 2px;
+        }
+        
+        .nav {
+            height: 50px;
+        }
+        
+        .nav ul li {
+            float: left;
+        }
+        
+        .nav ul li a {
+            display: block;
+            margin: 0 25px;
+            line-height: 50px;
+            color: #000;
+            text-decoration: none;
+            font-size: 15px;
+        }
+        
+        .nav ul .shouye {
+            color: rgb(1, 204, 240);
+        }
+        
+        .nav li a:hover {
+            color: rgb(1, 204, 240);
+        }
+        
+        .lan:hover {
+            color: rgb(1, 204, 240);
+        }
+        
+        .ge {
+            height: 310px;
+        }
+        
+        .ge .ge-box {
+            margin-top: 25px;
+            height: 290px;
+            padding: 20px 0 0 20px;
+            box-sizing: border-box;
+            background-color: #fff;
+        }
+        
+        .ge .tu-box {
+            width: 283px;
+            height: 250px;
+            background: url(../images/mojitobg.png);
+            float: left;
+        }
+        
+        .ge .tu-box img {
+            width: 250px;
+            height: 250px;
+            box-shadow: 0 0 1px 1px #999;
+        }
+        
+        .ge .xinxi {
+            width: 860px;
+            height: 250px;
+            float: right;
+            padding-top: 13px;
+            color: #333;
+        }
+        
+        .ge .xinxi span {
+            color: #ccc;
+        }
+        
+        .ge .xinxi .ge-name {
+            height: 50px;
+            font-size: 31px;
+            line-height: 50px;
+            font-weight: 400;
+        }
+        
+        .ge .xinxi .singer {
+            height: 24px;
+            line-height: 24px;
+        }
+        
+        .ge .xinxi table {
+            height: 60px;
+            padding-top: 8px;
+        }
+        
+        .ge .xinxi table td {
+            width: 250px;
+        }
+        
+        .ge .xinxi p {
+            color: #999;
+            line-height: 27px;
+        }
+        
+        .ge .xinxi .date {
+            margin-top: 15px;
+        }
+        
+        .ge .xinxi .date a {
+            display: inline-block;
+            width: 100px;
+            height: 36px;
+            line-height: 36px;
+            text-align: center;
+            padding: 0 18px;
+            border: 1px solid #ccc;
+            border-radius: 2px;
+            text-decoration: none;
+            color: #000;
+        }
+        
+        .ge .xinxi .date .goumai {
+            background-color: rgb(1, 204, 240);
+            color: #fff;
+        }
+        
+        .ge .xinxi .date a:hover {
+            background-color: #eee;
+        }
+        
+        .ge .xinxi .date .goumai:hover {
+            background-color: rgb(100, 204, 240);
+        }
+        
+        .music {
+            height: 295px;
+        }
+        
+        .music .mu-l {
+            width: 857px;
+            float: left;
+            background-color: #fff;
+        }
+        
+        .music .mu-r {
+            width: 300px;
+            float: right;
+            background-color: #fff;
+        }
+        
+        .music .mu-l table {
+            line-height: 50px;
+        }
+        
+        .music .mu-l table tr:nth-child(1),
+        .music .mu-l td.d {
+            color: #999;
+        }
+        
+        .music .mu-l .a {
+            width: 50px;
+            height: 50px;
+            text-align: center;
+        }
+        
+        .music .mu-l .b {
+            width: 500px;
+        }
+        
+        .music .mu-l .b .singer {
+            cursor: pointer;
+        }
+        
+        .music .mu-l .c {
+            width: 180px;
+        }
+        
+        .music .mu-l .b .singer span,
+        .music .mu-l .b .singer a {
+            color: rgb(100, 204, 240);
+            text-decoration: none;
+            border-radius: 3px;
+            font-size: 12px;
+            border: 1px solid rgb(100, 204, 240);
+        }
+        
+        .music .mu-l .kehuduan {
+            text-align: center;
+            margin-top: 50px;
+        }
+        
+        .music .mu-l .kehuduan p {
+            font-size: 20px;
+            letter-spacing: 2px;
+        }
+        
+        .music .mu-l .kehuduan a {
+            display: inline-block;
+            margin: 20px 0 30px;
+            width: 175px;
+            height: 40px;
+            line-height: 40px;
+            color: #fff;
+            text-decoration: none;
+            letter-spacing: 3px;
+            border-radius: 3px;
+            background-color: rgb(100, 204, 240);
+        }
+        
+        .music .mu-r {
+            padding: 0 12px 20px;
+            box-sizing: border-box;
+        }
+        
+        .music .mu-r div {
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 46px;
+        }
+        
+        .music .mu-r p {
+            font-size: 14px;
+            line-height: 25px;
+        }
+        /* bottom部分 */
+        
+        .bottom {
+            height: 470px;
+            margin-top: 30px;
+            background-color: rgb(51, 51, 51);
+        }
+        
+        .bottom .bot-box {
+            width: 1200px;
+            height: 350px;
+            margin: auto;
+        }
+        
+        .bottom .bot-box .bot-left {
+            height: 300px;
+            width: 700px;
+            float: left;
+        }
+        
+        .bottom .bot-box h3 {
+            font-size: 15px;
+            font-weight: 400;
+            padding: 80px 50px 46px;
+            color: #999;
+        }
+        
+        .bottom .bot-box .bot-left ul {
+            padding: 0 30px;
+        }
+        
+        .bottom .bot-box .bot-left ul li {
+            float: left;
+        }
+        
+        .bottom .bot-box .bot-left ul li a {
+            display: block;
+            text-decoration: none;
+            color: #999;
+            padding: 0 20px;
+            text-align: center;
+        }
+        
+        .bottom .bot-box .bot-left ul li a span {
+            font-size: 50px;
+        }
+        
+        .bottom .bot-box .bot-left ul li a p {
+            font-size: 14px;
+            font-weight: 400;
+            margin-top: 10px;
+        }
+        
+        .bottom .bot-box .bot-left ul li a:hover,
+        .bottom>p span:hover,
+        .bottom .bot-box .bot-right table td:hover {
+            color: rgb(1, 204, 240);
+            cursor: pointer;
+        }
+        
+        .bottom .bot-box .bot-right {
+            width: 500px;
+            height: 300px;
+            float: left;
+        }
+        
+        .bottom .bot-box .bot-right table {
+            width: 500px;
+            height: 150px;
+            padding-left: 50px;
+            color: #999;
+            font-size: 15px;
+        }
+        
+        .bottom>p {
+            text-align: center;
+            font-size: 12px;
+            line-height: 28px;
+            color: #999;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="header-left w">
+
+            <div class="logo">
+                <img style="display: inline-block; width: 70px;height: 70px;" src="../Images/tx.png" alt="">
+                <img src="../images/JVR.png" alt="">
+            </div>
+            <div class="mynav">
+                <ul>
+                    <li><a href="#" class="guan">杰威尔	</a></li>
+                    <li><a href="#">最新单曲</a></li>
+                    <li><a href="#">演唱会</a></li>
+                    <li><a href="#">选座入口	</a></li>
+                    <li><a href="#">VIP</a></li>
+                </ul>
+            </div>
+            <div class="search">
+                <input type="text" value="搜索音乐、MV、歌单、用户">
+                <span class="iconfont">&#xe6ad;</span>
+            </div>
+            <div class="login">
+                <a href="html/Nine.html">注册</a>
+                <a href="#" class="lvzhuan">周杰伦粉丝铭牌</a>
+                <a href="#" class="pay-pac">演出の行程</a>
+            </div>
+        </div>
+        <div class="nav w">
+            <ul>
+                <li><a href="../index.html">首页</a></li>
+                <li><a href="singer.html">歌手</a></li>
+                <li><a href="mv.html">MV</a></li>
+                <li><a href="xindie.html">新碟</a></li>
+                <li><a href="paihang.html">排行榜</a></li>
+                <li><a href="#" class="shouye">数字专辑</a></li>
+                <li><a href="video.html">Video</a></li>
+                <li><a href="Nine.html">后援会</a></li>
+                <li><a href="../html/iPhone/Twelve.html">手机端</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="ge">
+        <div class="ge-box w">
+            <div class="tu-box">
+                <img src="../images/mojitotu.jpg" alt="">
+            </div>
+            <div class="xinxi">
+                <div class="ge-name">Mojito</div>
+                <div class="singer lan"> <span class="iconfont">&#xe6ad;</span> 周杰伦</div>
+                <table>
+                    <tr>
+                        <td>流派：pop流行</td>
+                        <td>语种：国语</td>
+                    </tr>
+                    <tr>
+                        <td>发行时间：2020-06-12</td>
+                        <td>唱片公司：杰威尔音乐有限公司</td>
+                    </tr>
+                </table>
+                <p>已售3364972张</p>
+                <div class="date">
+                    <a href="#" class="goumai">立即购买</a>
+                    <a href="#">播放全部</a>
+                    <a href="#">收藏</a>
+                    <a href="#">评论</a>
+                    <a href="#">更多</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="music w">
+        <div class="mu-l">
+            <table>
+                <tr>
+                    <td class="a">&nbsp;</td>
+
+                    <td class="b">歌曲</td>
+                    <td class="c">歌手</td>
+                    <td class="d">时长</td>
+                </tr>
+                <tr>
+                    <td class="a" id="one">1</td>
+                    <td class="b">
+                        <div class="singer lan">
+                            Mojito
+                            <span>独家</span>
+                            <a href="#"><span>MV</span></a>
+                        </div>
+                    </td>
+                    <td class="c">周杰伦</td>
+                    <td class="d">03:05</td>
+                </tr>
+            </table>
+            <div class="kehuduan">
+                <p>查看更多内容，请下载客户端</p>
+                <a href="#">立即下载</a>
+            </div>
+        </div>
+        <div class="mu-r">
+            <div>简介</div>
+            <p>夏季限定特调上架！ 周杰伦Jay Chou 最新拉丁嘻哈沁脾情歌 MOJITO 一起恋上古巴的微醺浪漫 在古巴的海滩，点一杯大文豪海明威最爱的Mojito 和周杰伦一起品尝异国恋情般的微醺特调 阅读整个夏季的浪漫！</p>
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="bot-box">
+            <div class="bot-left">
+                <h3>下载客户端</h3>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <span class="iconfont">&#xe632;</span>
+                            <p>pc版</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="iconfont">&#xe600; </span>
+                            <p>Mac版</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="iconfont">&#xe664;</span>
+                            <p>Android版</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="iconfont">&#xe6ae;</span>
+                            <p>iphone版</p>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="bot-right">
+                <h3>合作链接</h3>
+                <table>
+                    <tr>
+                        <td>CJENM</td>
+                        <td>腾讯视频</td>
+                        <td>手机QQ空间</td>
+                    </tr>
+                    <tr>
+                        <td>最新版QQ</td>
+                        <td>腾讯社交广告</td>
+                        <td>电脑管家</td>
+                    </tr>
+                    <tr>
+                        <td>QQ浏览器</td>
+                        <td>腾讯微云</td>
+                        <td>腾讯云</td>
+                    </tr>
+                    <tr>
+                        <td>企鹅FM</td>
+                        <td>智能电视网</td>
+                        <td>当贝市场</td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+        <p><span>关于腾讯</span> | <span>About Tencent</span> | <span>服务条款</span> | <span>用户服务协议</span> | <span>隐私政策</span> | <span>权利声明</span> | <span>广告服务</span> | <span>腾讯招聘</span> | <span>客服中心</span> | <span>网站导航</span></p>
+        <p>Copyright © 1998 - 2020 Tencent. <span>All Rights Reserved.</span></p>
+        <p>腾讯公司 <span>版权所有</span> <span>腾讯网络文化经营许可证</span></p>
+    </div>
+</body>
+
+</html>

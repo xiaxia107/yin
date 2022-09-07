@@ -1,0 +1,559 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 1520px;
+}
+
+li {
+    list-style: none;
+}
+
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.header-left {
+    height: 89px;
+    border-bottom: 1px solid #ccc;
+}
+
+.logo {
+    float: left;
+    margin-right: 25px;
+}
+
+.logo img {
+    margin: 9px 0;
+}
+
+.mynav {
+    float: left;
+}
+
+.mynav li {
+    float: left;
+}
+
+.mynav ul li a {
+    display: block;
+    line-height: 90px;
+    padding: 0 17px;
+    color: #000;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.mynav li .guan {
+    background-color: rgb(1, 204, 240);
+    padding: 0 20px;
+    color: #fff;
+}
+
+.mynav ul li a:hover {
+    color: rgb(1, 204, 240);
+}
+
+.mynav li .guan:hover {
+    color: #fff;
+}
+
+.search {
+    position: relative;
+    float: left;
+    margin: 26px 5px 26px 30px;
+}
+
+.search input {
+    width: 220px;
+    height: 36px;
+    padding-left: 10px;
+    color: #ccc;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.search span {
+    position: absolute;
+    top: 9px;
+    right: 12px;
+    font-size: 21px;
+    color: #ccc;
+}
+
+.login {
+    float: left;
+    margin-left: 17px;
+}
+
+.login a {
+    display: inline-block;
+    height: 25px;
+    line-height: 25px;
+    margin: 27px 3px;
+    color: #000;
+    text-decoration: none;
+}
+
+.login .lvzhuan,
+.login .pay-pac {
+    margin-left: 17px;
+    font-size: 13px;
+    padding: 5px 8px;
+    border-radius: 3px;
+}
+
+.login .lvzhuan {
+    background-color: rgb(1, 204, 240);
+    color: #fff;
+}
+
+.login .pay-pac {
+    border: 1px solid #ccc;
+    margin-left: 2px;
+}
+
+.nav {
+    position: relative;
+    height: 50px;
+}
+
+.nav ul li {
+    float: left;
+}
+
+.nav ul li a {
+    display: block;
+    margin: 0 25px;
+    line-height: 50px;
+    color: #000;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.nav ul .chu {
+    color: rgb(1, 204, 240);
+}
+
+.nav li a:hover {
+    color: rgb(1, 204, 240);
+}
+
+.nav img {
+    position: absolute;
+    margin-left: -95px;
+    margin-top: -28px;
+    width: 240px;
+    height: 200px;
+}
+
+.flexc {
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    right: 50px;
+    top: 130px;
+}
+
+.flexv {
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    left: 50px;
+    top: 473px;
+}
+
+.flexc img,
+.flexv img {
+    width: 100px;
+    height: 100px;
+}
+
+
+/* 中部 */
+
+.xin {
+    background-image: linear-gradient(#eee, #fff);
+    width: 100%;
+    margin: auto;
+    border: 1px solid #ccc;
+}
+
+.xin .title {
+    padding: 50px 0 30px 0;
+    line-height: 110px;
+    margin: 0 auto;
+}
+
+.xin .title h2 {
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 30px;
+    color: #333;
+    letter-spacing: 20px;
+}
+
+.xin .tuijian {
+    height: 50px;
+    text-align: center;
+}
+
+.xin .tuijian a {
+    display: inline-block;
+    font-size: 15px;
+    text-decoration: none;
+    color: #333;
+    margin: 0 24px;
+}
+
+.xin .tuijian a:nth-child(1) {
+    color: rgb(1, 204, 240);
+}
+
+.xin .tuijian a:hover {
+    color: rgb(1, 204, 240);
+}
+
+
+/* 推荐区 */
+
+.xin .tuijianqu {
+    height: 360px;
+    margin: auto;
+}
+
+.xin .tuijianqu ul {
+    height: 280px;
+    width: 1200px;
+}
+
+.xin .tuijianqu li {
+    float: left;
+    margin-right: 20px;
+    width: 224px;
+    height: 280px;
+}
+
+.xin .tuijianqu li:last-child {
+    margin-right: 0px;
+}
+
+.xin .tuijianqu ul li a {
+    display: block;
+    overflow: hidden;
+}
+
+.xin .tuijianqu ul li img {
+    display: block;
+    width: 100%;
+    transition: all .4s;
+}
+
+.xin .tuijianqu ul li img:hover {
+    transform: scale(1.1);
+}
+
+.xin .tuijianqu ul li h4 a {
+    color: #333;
+    font-weight: normal;
+    text-decoration: none;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.xin .tuijianqu li h4 a:hover {
+    color: rgb(1, 204, 240);
+}
+
+.xin .tuijianqu li div {
+    color: #999;
+    font-size: 14px;
+    text-align: center;
+}
+
+
+/* 点 */
+
+.xin .tuijianqu .dian {
+    width: 50px;
+    height: 50px;
+    margin: 35px auto;
+}
+
+.xin .tuijianqu .dian div {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #eee;
+    float: left;
+}
+
+.xin .tuijianqu .dian div:nth-child(1) {
+    margin-right: 20px;
+    background-color: #bbb;
+}
+
+
+/*轮播图*/
+
+.lunbo {
+    width: 1140px;
+    height: 400px;
+    margin: 30px auto;
+    overflow: hidden;
+    position: relative;
+    border: 7px groove rgb(94, 94, 94);
+    border-radius: 15px;
+}
+
+.box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 400px;
+    width: 5700px;
+    animation: bo 15s steps(5) infinite;
+}
+
+.box:hover {
+    animation-play-state: paused;
+}
+
+.lunbo .box img {
+    height: 400px;
+    display: block;
+    float: left;
+}
+
+@keyframes bo {
+    0% {
+        margin-left: 0;
+    }
+    100% {
+        margin-left: -5700px;
+    }
+}
+
+
+/* bottom部分 */
+
+.bottom {
+    height: 470px;
+    background-color: rgb(51, 51, 51);
+}
+
+.bottom .bot-box {
+    width: 1200px;
+    height: 350px;
+    margin: auto;
+}
+
+.bottom .bot-box .bot-left {
+    height: 300px;
+    width: 700px;
+    float: left;
+}
+
+.bottom .bot-box h3 {
+    font-size: 15px;
+    font-weight: 400;
+    padding: 80px 50px 46px;
+    color: #999;
+}
+
+.bottom .bot-box .bot-left ul {
+    padding: 0 30px;
+}
+
+.bottom .bot-box .bot-left ul li {
+    float: left;
+}
+
+.bottom .bot-box .bot-left ul li a {
+    display: block;
+    text-decoration: none;
+    color: #999;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.bottom .bot-box .bot-left ul li a span {
+    font-size: 50px;
+}
+
+.bottom .bot-box .bot-left ul li a p {
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.bottom .bot-box .bot-left ul li a:hover,
+.bottom>p span:hover,
+.bottom .bot-box .bot-right table td:hover {
+    color: rgb(1, 204, 240);
+    cursor: pointer;
+}
+
+.bottom .bot-box .bot-right {
+    width: 500px;
+    height: 300px;
+    float: left;
+}
+
+.bottom .bot-box .bot-right table {
+    width: 500px;
+    height: 150px;
+    padding-left: 50px;
+    color: #999;
+    font-size: 15px;
+}
+
+.bottom>p {
+    text-align: center;
+    font-size: 12px;
+    line-height: 28px;
+    color: #999;
+}
+
+@media screen and (min-width:960px) {
+    .xin .tuijianqu ul {
+        margin: auto;
+    }
+}
+
+@media screen and (min-width:600px) and (max-width:960px) {
+    .header .login .lvzhuan,
+    .header .login .pay-pac {
+        display: none;
+    }
+    .header .search {
+        margin-left: 238px;
+    }
+    .header .login {
+        font-size: 20px;
+        margin-top: 5px;
+    }
+    .header .nav ul {
+        width: 464px;
+        margin: 20px auto;
+    }
+    .header .nav ul li:nth-child(6),
+    .header .nav ul li:nth-child(7),
+    .header .nav ul li:nth-child(8),
+    .header .nav ul li:nth-child(9) {
+        display: none;
+    }
+    .header .nav ul li a {
+        font-size: 20px;
+    }
+    .xin .tuijian a {
+        font-size: 22px;
+    }
+    .xin .tuijian a:nth-child(5),
+    .xin .tuijian a:nth-child(6) {
+        display: none;
+    }
+    .xin .tuijianqu ul li:nth-child(5) {
+        display: none;
+    }
+    .xin .tuijianqu ul li:nth-child(4) {
+        margin-right: 0;
+    }
+    .xin .tuijianqu {
+        height: 390px;
+    }
+    .xin .tuijianqu ul {
+        margin: auto;
+    }
+    .xin .tuijianqu ul li {
+        width: 270px;
+    }
+    .xin .tuijianqu ul li h4 a,
+    .xin .tuijianqu ul li div {
+        font-size: 18px;
+    }
+    .xin .tuijianqu .dian {
+        margin-top: 80px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .header .login .lvzhuan,
+    .header .login .pay-pac {
+        display: none;
+    }
+    .header .mynav li a {
+        font-size: 24px;
+    }
+    .header .search {
+        margin-left: 100px;
+    }
+    .header .login {
+        font-size: 24px;
+        margin-top: 5px;
+    }
+    .header .nav ul {
+        width: 320px;
+        margin: 20px auto;
+    }
+    .header .nav ul li:nth-child(4),
+    .header .nav ul li:nth-child(5),
+    .header .nav ul li:nth-child(6),
+    .header .nav ul li:nth-child(7),
+    .header .nav ul li:nth-child(8),
+    .header .nav ul li:nth-child(9) {
+        display: none;
+    }
+    .header .nav ul li a {
+        font-size: 30px;
+    }
+    .xin .title h2 {
+        font-size: 40px;
+    }
+    .xin .tuijian a {
+        font-size: 20px;
+    }
+    .xin .tuijian a:nth-child(4),
+    .xin .tuijian a:nth-child(5),
+    .xin .tuijian a:nth-child(6) {
+        display: none;
+    }
+    .xin .tuijianqu ul li:nth-child(5) {
+        display: none;
+    }
+    .xin .tuijianqu {
+        height: 580px;
+    }
+    .xin .tuijianqu ul {
+        margin: auto;
+        width: 1200px;
+        height: 500px;
+    }
+    .xin .tuijianqu ul li {
+        margin-top: 20px;
+        margin-right: 20px;
+        width: 280px;
+        height: 350px;
+        float: left;
+    }
+    .xin .tuijianqu ul li a img {
+        width: 280px;
+    }
+    .xin .tuijianqu ul li h4 a,
+    .xin .tuijianqu ul li div {
+        margin-top: 20px;
+        font-size: 20px;
+    }
+    .xin .tuijianqu .dian {
+        width: 60px;
+        margin-top: 30px;
+    }
+    .xin .tuijianqu .dian div {
+        width: 20px;
+        height: 20px;
+    }
+}
